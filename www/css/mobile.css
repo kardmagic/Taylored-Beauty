@@ -1,0 +1,316 @@
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.ui-bar-f {
+	border: 1px solid 		#2C0C35;
+	background: 			#e9eaeb;
+	color: 					#ffffff;	/* changes header and footer text color*/
+	font-weight: bold;
+	text-shadow: 0 1px 1px #333;
+	background-image: -moz-linear-gradient(top,#2C0C35,#2C0C35);/* changes header and footer*/
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#2C0C35),color-stop(1,#2C0C35));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2C0C35', EndColorStr='#2C0C35')";
+}
+.ui-bar-f, 
+.ui-bar-f input, 
+.ui-bar-f select, 
+.ui-bar-f textarea, 
+.ui-bar-f button {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.ui-bar-f .ui-link-inherit {
+	color: 					#fff;
+}
+.ui-bar-f .ui-link {
+	color: 					#7cc4e7;
+	font-weight: bold;
+}
+.ui-body-f {
+	border: 1px solid 		#2A2A2A;
+
+	color: 					#fff;
+	 text-shadow: 0 1px 0 	#000;
+	font-weight: normal;
+	
+	/* changes background color*/
+	
+	/*background-image: -moz-linear-gradient(top, 
+							#666666,                
+							#222222);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#666666),
+		color-stop(1, 		#222222));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#666666', EndColorStr='#222222)')";*/
+	background:transparent url(body1.gif) repeat;	
+
+	 
+}
+.ui-body-f,
+.ui-body-f input,
+.ui-body-f select,
+.ui-body-f textarea,
+.ui-body-f button {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.ui-body-f .ui-link-inherit {
+	color: 					#fff;
+}
+.ui-body-a .ui-link {
+	color: 					#2489CE;
+	font-weight: bold;
+}
+.ui-br {
+	border-bottom: rgb(130,130,130);
+	border-bottom: rgba(130,130,130,.3);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.ui-btn-up-f {
+	border: 1px solid 		#222;
+	background: 			#999;
+	font-weight: bold;
+	color: 					#FFF;
+	text-shadow: 0 -1px 1px #000;
+	background-image: -moz-linear-gradient(top, 
+							#999999, 
+							#666666);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#999999),
+		color-stop(1, 		#666666));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#999999', EndColorStr='#666666')";
+}
+.ui-btn-up-f a.ui-link-inherit {
+	color: 					#fff;
+}
+.ui-btn-hover-f {
+	border: 1px solid 		#000;
+	background: 			#AAA;
+	font-weight: bold;
+	color: 					#fff;
+	text-shadow: 0 -1px 1px #000;
+	background-image: -moz-linear-gradient(top, 
+							#AAAAAA, 
+							#999999);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#AAAAAA),
+		color-stop(1, 		#999999));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#AAAAAA', EndColorStr='#999999')";
+}
+.ui-btn-hover-f a.ui-link-inherit {
+	color: 					#fff;
+}
+.ui-btn-down-f {
+	border: 1px solid 		#000;
+	background: 			#777;
+	font-weight: bold;
+	color: 					#fff;
+	text-shadow: 0 -1px 1px #000;
+	background-image: -moz-linear-gradient(top, 
+							#777777, 
+							#555555);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#777777),
+		color-stop(1, 		#555555));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777', EndColorStr='#555555')";
+}
+.ui-btn-down-f a.ui-link-inherit {
+	color: 					#fff;
+}
+.ui-btn-up-f,
+.ui-btn-hover-f,
+.ui-btn-down-f {
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+/*  End Theme F */
+
+
+
+
+/* Widen and center h1 text between "Back" and "Home" buttons */
+.ui-title {
+	width:50%;
+	margin-left:26% !important;
+}
+/* Align Home button left */
+.ui-header .ui-btn-right {
+	left:10px;
+	right:inherit;
+}
+/* Capitalize header h1 */
+.ui-header h1 {
+	text-transform:capitalize;	
+}
+/* Full Site/About icon spacing */
+.ui-btn-inner {
+	padding-left:40px;	
+}
+/* Nested list width fix http://bit.ly/fJGPsg */
+.ui-li .ui-btn-inner a.ui-link-inherit {
+	padding-top:0.7em;
+	padding-right:30px;
+	padding-bottom:0.7em;
+}
+/* Remove background seal */
+.ui-content {
+	background:none;
+	
+}
+/* Make time aside smaller to allow for longer titles */
+.ui-li-aside {
+	width:20% !important;
+}
+/* add space after list dividers */
+ul.copy-divider {
+	margin:20px -15px 0 -15px !important;
+}
+/* Home page banner */
+h2#bannermain {
+	background:transparent url(snooker1.gif) no-repeat left 10px;
+	
+	width:100%;
+	height:400px;
+	margin:-10px auto -325px auto;
+	text-indent:-9999px;
+}
+
+h2#bannertaylored {
+	background:transparent url(logo.jpg) no-repeat left 10px;
+	
+	width:100%;
+	height:400px;
+	margin:-10px auto -325px auto;
+	text-indent:-9999px;
+}
+
+
+h2#bannermain {
+	background:transparent url(snooker1.gif) no-repeat left 10px;
+	
+	width:100%;
+	height:400px;
+	margin:-10px auto -325px auto;
+	text-indent:-9999px;
+}
+h2#bannerpoker {
+	background:transparent url(poker1.gif) no-repeat left 10px;
+	width:100%;
+	height:400px;
+	margin:-10px auto -325px auto;
+	text-indent:-9999px;
+}
+
+h2#bannersnookerpool {
+	background:transparent url(snookerpool.gif) no-repeat left 10px;
+	width:100%;
+	height:400px;
+	margin:-10px auto -325px auto;
+	text-indent:-9999px;
+}
+
+h2#bannerdarts {
+	background:transparent url(darts.gif) no-repeat left 10px;
+	width:100%;
+	height:400px;
+	margin:-10px auto -325px auto;
+	text-indent:-9999px;
+}
+
+h2#bannerlounge {
+	background:transparent url(lounge.gif) no-repeat left 10px;
+	width:100%;
+	height:400px;
+	margin:-10px auto -325px auto;
+	text-indent:-9999px;
+}
+
+.ui-icon-maps {
+background: rgba(0,0,0,.4) url(images/maps.png) no-repeat;
+}
+.ui-icon-tel{
+background: rgba(0,0,0,.4) url(images/phone.png) no-repeat;
+}
+
+/* Home page banner landscape */
+.landscape h2#banner {
+	background:transparent url(../img/banner/banner-landscape.jpg) no-repeat left 10px;
+	width:480px;
+	height:290px;
+	margin:-10px auto -175px auto;
+	text-indent:-9999px;
+}
+/* Remove reduntant extra top padding - don't put h2's in front of ul.listview */
+h2 {
+	margin:0;
+	font-size:20px;
+}
+/* Home page icons */
+.ui-li-icon {
+	top:0.4em !important;
+}
+/* Make room for icons */
+.ui-li-has-icon .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-icon {
+	padding-left:47px;
+}
+/* Add space after intro paragraphs */
+p.intro {
+	margin-bottom:30px !important;
+}
+/* Search box top margin */
+.ui-listview-filter {
+	margin-top:20px;
+}
+/* Remove bold from grid */
+.ui-grid-b {
+	font-weight:normal;	
+}
+/* About */
+#about-stanford {
+	background:url(../img/logos/about-stanford.png) no-repeat left top;
+	text-indent:-5000px;
+	width:254px;
+	height:50px;
+	margin:0 auto;
+}
+/* Dynamic pages */
+
+/* News */
+/* Thumbnails */
+.ui-li-thumb {
+	top:21px;
+}
+/* Don't append headline */
+#news h3 {
+	white-space:normal;
+}
+/* Events */
+/* Capitalize first letter in Events pages */
+#event h1 {
+	text-transform:capitalize;	
+}
+/* Don't append headline in Events list page paragraphs */
+#event h3, #featured h3, #today h3 {
+	white-space:normal;
+	padding-bottom:1px; /* Make room for links bottom-border */
+}
+/* Format Events thumbnails to match News thumbs size for consistencey */
+#event .ui-li-thumb, #featured .ui-li-thumb, #today .ui-li-thumb {
+	top:auto;
+	max-height:80px;
+}
+/* e theme */
+.ui-btn-up-e { /* Lighter gradient: light to dark */
+	background:-webkit-gradient(linear, center top, center bottom, from(rgba(157,149,115,.5)), to(rgba(157,149,115,.7)));
+	border:#000 !important;
+}
+.ui-btn-hover-e { /* Darker gradient: light to dark */
+	background:-webkit-gradient(linear, center top, center bottom, from(rgba(196,191,169,.7)), to(rgba(196,191,169,1)));
+	border:red;
+}
+ui-btn-down-e {
+	background:green;
+	border:green;
+}

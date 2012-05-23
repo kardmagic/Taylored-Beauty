@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<!--<html>-->
+	<head>
+
+	<meta name="viewport"content="width=device-width,minimum-scale=1.0, maximum-scale=1.0" />
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+  	<title>Taylored Beauty</title>
+  	<!--
+<script type="text/javascript">
+if (screen.width<800)
+{
+
+}
+else
+{
+window.location="http://www.mobilefriendlywebapps.co.uk/"
+}
+</script>-->
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="apple-touch-icon" href="iphone.png" />
+	<link rel="apple-touch-startup-image" href="startup.png" />
+<link href="css/mobile.css" rel="stylesheet" type="text/css" />		
+	<!-- link to allow bookmark website -->
+	<link rel="stylesheet" href="bookmark/add2home.css">
+	<script type="text/javascript">
+		var addToHomeConfig = {
+		animationIn: 'bubble',
+		animationOut: 'drop',
+		lifespan:10000,
+		expire:2,
+		touchIcon:true,
+		message:'Add Our Mobile App To Your <strong>%device</strong> Home Page. Available Anytime `%icon`.'
+		};
+	</script>
+	<script type="application/javascript" src="bookmark/add2home.js"></script>
+	<!-- bookmark end -->
+	
+		<link rel="stylesheet" href="js/jquery.mobile-1.1.0.min.css" />
+  		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery.mobile-1.1.js"></script>  
+		
+	
+   <script type="text/javascript">
+		$(document).bind("mobileinit", function() {
+      	$.mobile.page.prototype.options.addBackBtn = true;
+ 		});    
+	</script>  
+
+<div>
+<script type="text/javascript">  
+$(document).ready(function() {  
+  $("#loading").show();  
+  $.ajax({  
+    type: "GET",  
+    url: "http://www.mobilefriendlywebapps.co.uk/tayloredtest1/note.xml",  
+    dataType: "xml",  
+    success: parseXml  
+});  
+function parseXml(xml) {  
+$(xml).find("menu").each(function() {  
+//find each instance of loc in xml file and wrap it in a link  
+$("div#site_list").append( $(this).find("cd").text() );  
+$("#loading").hide();  
+ });  
+}  
+}); 
+
+
+</script> 
+
+
+
+	
+</head>
+
+	
+<body> 
+
+
+<!-- Start of first page: #one -->
+<div data-role="page" data-theme="f" id="one">
+
+	
+       <div data-theme="f" data-role="header" >
+       
+       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+
+
+	<div data-role="content" >	
+
+		
+	                    <div class="choice_list" data-theme="f"> 
+
+	
+	<ul data-role="listview" data-inset="true"" data-theme="f">
+
+	<li data-theme="f"><a href="#two" data-transition="slide">About Us</a></li>
+	<li data-theme="f"><a href="#three" data-transition="slide">Treatments</a></li>
+	<li data-theme="f"><a href="#four" data-transition="slide">Preparation</a></li>
+	<li data-theme="f"><a href="#five" data-transition="slide">Products</a></li>
+	</ul>
+	</div>	
+
+
+
+
+	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="tel:07957 682 367" class="ui-btn-active ui-state-persist"><img src="images/phone.png" width="25px" height="25px"  alt="" /></a></li>
+				<li><a href="#seven" data-transition="none"><img src="images/mail.png" width="40px" height="25px"   alt="" /></a></li>
+				<li><a href="#popup" data-transition="none"><img src="images/price.png" width="40px" height="25px"   alt="" /></a></li>
+				<li><a href="index.html" data-transition="none"><img src="images/home.png" width="25px" height="25px"   alt="" /></a></li>
+				<li><a href="#six" data-transition="none"><img src="images/info.png" width="25px" height="25px"   alt="" /></a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="f">
+
+<div data-theme="f" data-role="header" >
+<a href="index.html" data-role="button" data-direction="reverse" data-transition="slide" data-icon="arrow-l" data-iconpos="notext">back</a>       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+	<div data-role="content" data-theme="f" style="border:none;">	
+
+   
+         
+ 
+
+
+<div id="site_list">  
+
+  
+                               
+   </div>                   
+              
+
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" >
+		<h3>&copy; Taylored Beauty</h3>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<!-- Start of third page: #three -->
+<div data-role="page" id="three" data-theme="f" >
+
+	<div data-theme="f" data-role="header" >
+<a href="index.html" data-role="button" data-transition="none" data-icon="arrow-l" data-iconpos="notext">back</a>       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+
+	<div data-role="content" data-theme="f" style="border:none;">	
+
+<div>
+   <i>Spray Tanning</i><small><font color="grey"> - Using Sienna-X and Fake Bake. Long lasting award winning natural looking tans, to suit all skin tones.</small></font><br><br>
+   
+<i>Bio Sculpture Nails</i><small><font color="grey"> - Beautiful Soak off UV Gels lasting 3 weeks before needing infilling. Hottest new colours in stock.</small></font><br><br>
+
+<i>Gelish</i><small><font color="grey"> - Amazing 14 day Gel Polish.</small></font><br><br>
+
+<i>EZ Flow</i><small><font color="grey"> - Hard file off gel nails, great for weak and extended nails.</small></font><br><br>
+
+<i>HD Brows</i><small><font color="grey"> - The celebrity must have of 2012. The 7 step process to fabulous brows. - www.hdbrows.co.uk</small></font><br><br>
+
+<i>Amazing Lash Extensions</i><small><font color="grey"> - Achieve different looks from natural pretty, to full on glamour with waterproof eyelash extensions. These look great for a holiday or wedding and are lightweight so perfect for everyday.</small></font><br><br>
+
+<i>Waxing</i><small><font color="grey"> - Using the innovative new wax from Australia, Waxxpress.</small></font><br><br>
+
+<i>LVL</i><small><font color="grey"> - Lash Volume Length. The perfect way to accentuate your natural lashes.</small></font><br><br>
+
+<i>Emani Mineral Make-Up</i><small><font color="grey"> - Beautiful soft natural mineral make up by Emani.</small></font>   
+           
+                      
+                </div>
+
+
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" >
+		<h3>&copy; Taylored Beauty</h3>
+	</div><!-- /footer -->
+</div><!-- /page three -->
+
+
+<!-- Start of third page: #four -->
+<div data-role="page" id="four" data-theme="f" >
+
+	 <div data-theme="f" data-role="header" >
+<a href="index.html" data-role="button" data-transition="none" data-icon="arrow-l" data-iconpos="notext">back</a>       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+
+	<div data-role="content" data-theme="f" style="border:none;">	
+
+ <div>
+              
+              <i>Tanning Preparation</i><br><br><small><font color="grey">
+
+Shave/wax at least 24 hours before tanning. Exfoliate, shower and moisturise the night before tanning – do not moisturise on the day of the tan. Remove all face make-up prior to tanning. Wear dark underwear & loose dark clothing. Bring flip flops or loose shoes for after the tanning. Paint nails with clear or coloured nail polish.<br><br>
+
+Not suitable for people with respiratory problems or within the first 3 months of Pregnancy. Any Medical conditions must be disclosed to the therapist, prior to tanning as consent from your G.P. may be required.</small></font><br><br>
+
+<i>Eyelash and Eyebrow Preparation</i><br><br><small><font color="grey">
+
+Patch tests required for Eyelash and Eyebrow Tinting, LVL, and eyelash extensions if extremely sensitive eyes.</small></font><br><br>
+              
+              
+                     </div>
+
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" >
+		<h3>&copy; Taylored Beauty</h3>
+	</div><!-- /footer -->
+</div><!-- /page four -->
+
+
+<!-- Start of fith page: #five -->
+<div data-role="page" id="five" data-theme="f" >
+
+	<div data-theme="f" data-role="header" >
+<a href="index.html" data-role="button" data-transition="none" data-icon="arrow-l" data-iconpos="notext">back</a>       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+
+	<div data-role="content" data-theme="f" style="border:none;">	
+
+          <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    <img src="images/alashes.jpg" width="99%"/>
+                    </div>
+                    
+                </div>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                    <img src="images/lvl.jpg"/>
+                    </div>
+                    <div class="ui-block-b">
+                    <img src="images/HDbrow.jpg"/>
+                    </div>
+                    <div class="ui-block-c">
+                    <img src="images/fakebake.jpg"/>
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    <img src="images/BioSculptureLogo.jpg"/>
+                    </div>
+                    <div class="ui-block-b">
+                    <img src="images/colourcouture.jpg"/>
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    <img src="images/kookygrey.jpg" width="99%"/>
+                    </div>
+                    
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    <img src="images/emani.jpg"/>
+                    </div>
+                    <div class="ui-block-b">
+                    <img src="images/gelish.jpg"/>
+                    </div>
+                </div>
+
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" >
+		<h3>&copy; Taylored Beauty</h3>
+	</div><!-- /footer -->
+</div><!-- /page five -->
+
+<!-- Start of sixth page: #six -->
+<div data-role="page" id="six" data-theme="f" >
+
+	 <div data-theme="f" data-role="header" >
+<a href="index.html" data-role="button" data-transition="none" data-icon="arrow-l" data-iconpos="notext">back</a>       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+
+	<div data-role="content" data-theme="f" style="border:none;">	
+
+                         <a href="tel:07957 682 367"  data-role="button" data-theme="f" data-icon="tel" > Call us </a>
+
+<fieldset class="ui-grid-a" >
+	<div class="ui-block-a"><div class="ui-bar ui-bar-f">Monday</div></div>
+	<div class="ui-block-b"><div class="ui-bar ui-bar-c">7pm -10pm</div></div>	   
+	<div class="ui-block-a"><div class="ui-bar ui-bar-f">Tuesday</div></div>
+	<div class="ui-block-b"><div class="ui-bar ui-bar-c">9am-5:30pm</div>	</div>
+	<div class="ui-block-a"><div class="ui-bar ui-bar-f">Wednesday</div></div>
+	<div class="ui-block-b"><div class="ui-bar ui-bar-c">9am-10pm</div>	</div>
+	<div class="ui-block-a"><div class="ui-bar ui-bar-f">Thursday</div></div>
+	<div class="ui-block-b"><div class="ui-bar ui-bar-c">9am-3pm</div></div>
+	<div class="ui-block-a"><div class="ui-bar ui-bar-f">Thursday</div></div>
+	<div class="ui-block-b"><div class="ui-bar ui-bar-c">7pm-10pm</div></div>
+	<div class="ui-block-a"><div class="ui-bar ui-bar-f">Friday</div></div>
+	<div class="ui-block-b"><div class="ui-bar ui-bar-c">9am-7pm</div>
+				
+					</div>
+				
+</fieldset>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" >
+		<h3>&copy; Taylored Beauty</h3>
+	</div><!-- /footer -->
+</div><!-- /page six -->
+
+<!-- Start of seventh page: #seven -->
+<div data-role="page" id="seven" data-theme="f" >
+
+	<div data-theme="f" data-role="header" >
+<a href="index.html" data-role="button"  data-transition="none" data-icon="arrow-l" data-iconpos="notext">back</a>       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+
+	<div data-role="content" data-theme="f" style="border:none;">	
+
+  <a href="tel:07957 682 367"  data-role="button" data-theme="f" data-icon="tel" data-theme="b"> Call us </a>
+                 
+                 <div>
+              <center>   Taylored Beauty, Energique,<br> Anstey Lane<br>
+Alton, Hants<br>
+GU34 2NB<br><center>
+<a href="http://maps.google.co.uk/maps?q=GU34+2NB&oe=utf-8&client=firefox-a&hnear=GU34+2NB,+United+Kingdom&gl=uk&t=m&z=16"  data-transition="flip" data-role="button" data-icon="maps" data-theme="f"> Find us on Google Maps </a> 
+<hr>
+                 </div>
+           
+                   <form action="">
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="textinput1">
+                                Name:
+                            </label>
+                            <input id="textinput1" placeholder="" value="" type="text" />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="textinput2">
+                                Email
+                            </label>
+                            <input id="textinput2" placeholder="" value="" type="email" />
+                        </fieldset>
+                    </div>
+                </form>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea1">
+                            Message
+                        </label>
+                        <textarea id="textarea1" placeholder="">
+                        </textarea>
+                    </fieldset>
+                </div>
+                <input data-icon="check" data-iconpos="left" value="Submit" type="submit" />
+
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" >
+		<h3>&copy; Taylored Beauty</h3>
+	</div><!-- /footer -->
+</div><!-- /page seven -->
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="popup">
+
+<div data-theme="f" data-role="header" >
+<a href="index.html" data-role="button" data-transition="none" data-icon="arrow-l" data-iconpos="notext">back</a>       <img src="css/logo2.gif" width="100%"  alt="" />
+       </div><!--/header-->
+
+	<div data-role="content" data-theme="f">	
+				
+		<div data-role="collapsible-set">
+		
+		
+			<div data-role="collapsible" data-theme="f" data-content-theme="f">
+				<h3>Soup</h3>
+		<div>
+			<table width="100%">
+				<tr>
+    				<td style="border-bottom:thin dotted #ff0000;">1</td>
+    				<td style="border-bottom:thin dotted #ff0000;">Hot &amp; Sour Soup</td>
+    				<td style="border-bottom:thin dotted #ff0000;">&pound;2.20 </td>
+    			</tr>
+				<tr>
+   					 <td style="border-bottom:thin dotted #ff0000;">2</td>
+    				<td style="border-bottom:thin dotted #ff0000;">Noodle Soup</td>
+    				<td style="border-bottom:thin dotted #ff0000;">&pound;2.20 </td>
+				</tr>
+				<tr>
+    				<td style="border-bottom:thin dotted #ff0000;">3</td>
+    				<td style="border-bottom:thin dotted #ff0000;">Mushroom Soup</td>
+    				<td style="border-bottom:thin dotted #ff0000;">&pound;2.20 </td>
+				</tr>
+				<tr>
+    				<td style="border-bottom:thin dotted #ff0000;">4</td>
+    				<td style="border-bottom:thin dotted #ff0000;">Sweetcorn Soup</td>
+    				<td style="border-bottom:thin dotted #ff0000;">&pound;2.20</td>
+				</tr>
+			</table>
+		</div>
+			</div>
+			<div data-role="collapsible" data-theme="f" data-content-theme="f">
+				<h3>Appetisers</h3>
+		<div>
+			<table width="100%">
+				<tr>
+    				<td style="border-bottom:thin dotted #ff0000;">5</td>
+    				<td style="border-bottom:thin dotted #ff0000;">Crispy Seaweed</td>
+    				<td style="border-bottom:thin dotted #ff0000;">&pound;3.85 </td>
+				</tr>
+				<tr>
+    				<td style="border-bottom:thin dotted #ff0000;">6 </td>
+    				<td style="border-bottom:thin dotted #ff0000;">Sesame Prawn on Toast</td>
+    				<td style="border-bottom:thin dotted #ff0000;">&pound;4.25 </td>
+				</tr>
+				<tr>
+    				<td style="border-bottom:thin dotted #ff0000;">7</td>
+    				<td style="border-bottom:thin dotted #ff0000;">Vegetable Spring Rolls</td>
+   					 <td style="border-bottom:thin dotted #ff0000;">&pound;2.05 </td>
+				</tr>
+			</table>
+		</div>
+			</div>
+			<div data-role="collapsible" data-theme="f" data-content-theme="f">
+				<h3>Chop Suey Dishes (Beansprouts)</h3>
+				
+		<div><table width="100%"><tr>
+    <td style="border-bottom:thin dotted #ff0000;">8</td>
+    <td style="border-bottom:thin dotted #ff0000;">Chicken Chop Suey</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.60 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">9</td>
+    <td style="border-bottom:thin dotted #ff0000;">King Prawn Chop Suey</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.50 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">10</td>
+    <td style="border-bottom:thin dotted #ff0000;">Prawn Chop Suey</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.10 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">11</td>
+    <td style="border-bottom:thin dotted #ff0000;">Beef Chop Suey</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.60 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">12 </td>
+    <td style="border-bottom:thin dotted #ff0000;">Pork Chop Suey</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.60 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">13</td>
+    <td style="border-bottom:thin dotted #ff0000;">Special Chop Suey</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.10 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">14</td>
+    <td style="border-bottom:thin dotted #ff0000;">Mushroom Chop Suey</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.60</td>
+</tr></table></div>
+			</div>
+			<div data-role="collapsible" data-theme="f" data-content-theme="f">
+				<h3>Chow Mein Dishes (Noodles)</h3>
+				
+		<div><table width="100%"><tr>
+    <td style="border-bottom:thin dotted #ff0000;">15</td>
+    <td style="border-bottom:thin dotted #ff0000;">Singapore Chow Mein </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.25 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">16</td>
+    <td style="border-bottom:thin dotted #ff0000;">Special Chow Mein</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.10 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">17</td>
+    <td style="border-bottom:thin dotted #ff0000;">King Prawn Chow Mein</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.50 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">18</td>
+    <td style="border-bottom:thin dotted #ff0000;">Prawn Chow Mein</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.10 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">19</td>
+    <td style="border-bottom:thin dotted #ff0000;">Chicken Chow Mein</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.65 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">20</td>
+    <td style="border-bottom:thin dotted #ff0000;">Beef Chow Mein</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.65 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">21</td>
+    <td style="border-bottom:thin dotted #ff0000;">Pork Chow Mein</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.65 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">22</td>
+    <td style="border-bottom:thin dotted #ff0000;">Mushroom Chow Mein</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.65</td>
+</tr></table></div>
+			</div>
+			<div data-role="collapsible" data-theme="f" data-content-theme="f">
+				<h3>Fried Rice Dishes</h3>
+			
+		<div><table width="100%"><tr>
+    <td style="border-bottom:thin dotted #ff0000;">23</td>
+    <td style="border-bottom:thin dotted #ff0000;">Singapore Fried Rice </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.10 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">24</td>
+    <td style="border-bottom:thin dotted #ff0000;">Young Chow Fried Rice </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.05 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">25</td>
+    <td style="border-bottom:thin dotted #ff0000;">Prawn Fried Rice</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.85 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">26</td>
+    <td style="border-bottom:thin dotted #ff0000;">Chicken Fried Rice</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.65 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">27</td>
+    <td style="border-bottom:thin dotted #ff0000;">Egg Fried Rice</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;2.70 </td>
+</tr></table></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="f" data-content-theme="f">
+				<h3>Curried Dishes with Boiled Rice</h3>
+			
+		<div><table width="100%"><tr>
+    <td style="border-bottom:thin dotted #ff0000;">28</td>
+    <td style="border-bottom:thin dotted #ff0000;">King Prawn Curry </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;6.70 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">29</td>
+    <td style="border-bottom:thin dotted #ff0000;">Prawn Curry </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;6.25 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">30</td>
+    <td style="border-bottom:thin dotted #ff0000;">Chicken Curry </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;6.25 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">31</td>
+    <td style="border-bottom:thin dotted #ff0000;">Beef Curry </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;6.25 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">32 </td>
+    <td style="border-bottom:thin dotted #ff0000;">Pork Curry </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;6.25 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">33</td>
+    <td style="border-bottom:thin dotted #ff0000;">Mixed Vegetable Curry</td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;6.25</td>
+</tr></table></div>				</div>	
+				
+				
+			<div data-role="collapsible" data-theme="f" data-content-theme="f">
+				<h3>Mixed Vegetable Dishes</h3>
+				
+		<div><table width="100%"><tr>
+    <td style="border-bottom:thin dotted #ff0000;">34</td>
+    <td style="border-bottom:thin dotted #ff0000;">King Prawn </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.50 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">35</td>
+    <td style="border-bottom:thin dotted #ff0000;">Prawn </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;5.10 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">36</td>
+    <td style="border-bottom:thin dotted #ff0000;">Chicken </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.75 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">37</td>
+    <td style="border-bottom:thin dotted #ff0000;">Beef </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.75 </td>
+</tr>
+<tr>
+    <td style="border-bottom:thin dotted #ff0000;">38</td>
+    <td style="border-bottom:thin dotted #ff0000;">Pork </td>
+    <td style="border-bottom:thin dotted #ff0000;">&pound;4.75</td>
+</tr></table></div>
+				
+				
+				
+
+
+				</div>	
+			
+			
+		</div>	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="f" >
+		<h3>&copy; Taylored Beauty</h3>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+
+
+
+</body>
+
+
+
+
+</html>

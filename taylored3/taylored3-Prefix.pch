@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'taylored3' target in the 'taylored3' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
