@@ -20,29 +20,7 @@
         
         
         <script type="text/javascript">  
-            $(document).ready(function() {  
-                              $.ajax({  
-                                     type: "GET",  
-                                     url: "http://www.mobilefriendlywebapps.co.uk/tayloredtest1/note.xml",  
-                                     dataType: "xml",  
-                                     success: parseXml  
-                                     });  
-                              function parseXml(xml) {  
-                              $(xml).find("menu").each(function() {  
-                                                       //find each instance of loc in xml file and wrap it in a link 
-                                                       $("div#site_list").append( $(this).find("cd").text() );  
-                                                       $("div#treatments").append( $(this).find("cd1").text() ); 
-                                                       $("div#preparation").append( $(this).find("cd2").text() );
-                                                       $("div#products").append( $(this).find("cd3").text() );
-                                                       });  
-                              }  
-                           
-                        
-
-                              
-                              
-                              }); 
-            
+                   
             
             </script>  
         
@@ -53,7 +31,7 @@
     <script type="text/javascript">
 
 
-	// If you want to prevent dragging, uncomment this section
+	//If you want to prevent dragging, uncomment this section
 	/*
 	function preventBehavior(e) 
 	{ 
@@ -83,6 +61,30 @@
 	for more details -jm */
 	function onDeviceReady()
 	{
+		    $(document).ready(function() {  
+                              $.ajax({  
+                                     type: "GET",  
+                                     url: "http://www.mobilefriendlywebapps.co.uk/tayloredtest1/note.xml",  
+                                     dataType: "xml",  
+                                     success: parseXml  
+                                     });  
+                              function parseXml(xml) {  
+                              $(xml).find("menu").each(function() {  
+                                                       //find each instance of loc in xml file and wrap it in a link 
+                                                       $("div#site_list").append( $(this).find("cd").text() );  
+                                                       $("div#treatments").append( $(this).find("cd1").text() ); 
+                                                       $("div#preparation").append( $(this).find("cd2").text() );
+                                                       $("div#products").append( $(this).find("cd3").text() );
+                                                       });  
+                              }  
+                           
+                        
+
+                              
+                              
+                              });  		
+		
+		
 	
 	}
     
