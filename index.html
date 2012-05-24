@@ -95,7 +95,7 @@
 		    var networkState = navigator.network.connection.type;
 
         var states = {};
-        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.UNKNOWN]  = 'Non';
         states[Connection.ETHERNET] = 'Ethernet connection';
         states[Connection.WIFI]     = 'WiFi connection';
         states[Connection.CELL_2G]  = 'Cell 2G connection';
@@ -106,10 +106,10 @@
 if (states[networkState]=='Non')
   {
   /*onOnline();*/
-   alert('No Connection');
+   alert('No Connection ' + states[networkState]);
   }
   else{
-   alert('You have connection' + states[networkState]);	
+   alert('You have connection ' + states[networkState]);	
   	
   }
       /*  alert('Connection type: ' + states[networkState]);  */
