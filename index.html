@@ -53,6 +53,8 @@
 	function onBodyLoad()
 	{		
 		document.addEventListener("deviceready", onDeviceReady, false);
+		document.addEventListener("resume", yourCallbackFunction, false);
+
 	}
 	
 	/* When this function is called, Cordova has been initialized and is ready to roll */
@@ -62,6 +64,10 @@
 	function onDeviceReady()
 	{
 		    $(document).ready(function() {  
+	}
+	function onResume() {
+   setTimeout(function() {
+   	   $(document).ready(function() {  
                               $.ajax({  
                                      type: "GET",  
                                      url: "http://www.mobilefriendlywebapps.co.uk/tayloredtest1/note.xml",  
@@ -83,6 +89,12 @@
                               
                               
                               });  		
+                 
+                              });  
+        }, 0);
+}
+	
+		 		
 		
 		
 	
