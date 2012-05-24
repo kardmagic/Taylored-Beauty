@@ -88,7 +88,7 @@
                               
 	}
 	function onResume() {
- 
+ setTimeout(function() {
    	   $(document).ready(function() {  
                               $.ajax({  
                                      type: "GET",  
@@ -108,6 +108,8 @@
                  
                               }); 
                                alert('resume Function Complete');
+ }, 0);
+
 }
 	
 		 		
