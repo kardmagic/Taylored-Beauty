@@ -63,6 +63,7 @@
 	for more details -jm */
 	function onDeviceReady()
 	{
+		document.addEventListener("online", onOnline, false);
 		document.addEventListener("resume", onResume, false);
 		
 		 $(document).ready(function() {  
@@ -91,7 +92,7 @@
 	}
 	function onResume() {
 		setTimeout(function() {
-		document.addEventListener("online", onOnline, false);
+		onOnline();
 		alert("resume");
 		}, 0); 
 	}
