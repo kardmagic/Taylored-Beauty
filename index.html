@@ -90,8 +90,10 @@
                               
 	}
 	function onResume() {
+		setTimeout(function() {
 		document.addEventListener("online", onOnline, false);
 		alert("resume");
+		}, 0); 
 	}
 function onOnline() {
  setTimeout(function() {
