@@ -53,6 +53,7 @@
 	function onBodyLoad()
 	{		
 		document.addEventListener("deviceready", onDeviceReady, false);
+		 document.addEventListener("online", onOnline, false);
 		document.addEventListener("resume", onResume, false);
 
 	}
@@ -88,6 +89,7 @@
                               
 	}
 	function onResume() {
+		function onOnLine() {
  setTimeout(function() {
    	   $(document).ready(function() {  
                               $.ajax({  
@@ -109,9 +111,9 @@
                               }); 
                               window.location.reload();
                               
- }, 0);
-
-}
+ }, 0);  /*set time out function for alert messages end*/
+}/* online function end*/
+}/* resume function end*/
 	
 		 		
 		
