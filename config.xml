@@ -15,7 +15,10 @@ email="">
 KardMagic
 </author>
 
-<icon src="icon.png" gap:role="default" />
+
+<icon src="icon.png" width="57" height="57" />
+<icon src="icon-72.png" gap:platform="ios" width="72" height="72" />
+<icon src="icon_at_2x.png" width="114" height="114" />
 
 <feature name="http://mobilefriendlywebapps.co.uk"/>
 <feature name="http://mobilefriendlywebapps.co.uk"/>
