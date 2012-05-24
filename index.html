@@ -64,7 +64,7 @@
 	function onDeviceReady()
 	{
 		document.addEventListener("resume", onResume, false);
-		document.addEventListener("online", onOnline, false);
+		
 		 $(document).ready(function() {  
                               $.ajax({  
                                      type: "GET",  
@@ -83,14 +83,17 @@
                               }  
                  
                               });  
-                         
+                         alert("onload");
 
                               
                               
                               
 	}
 	function onResume() {
-
+		document.addEventListener("online", onOnline, false);
+		alert("resume");
+	}
+function onOnline() {
  setTimeout(function() {
    	   $(document).ready(function() {  
                               $.ajax({  
@@ -111,7 +114,7 @@
                  
                               }); 
                               window.location.reload();
-                              
+                              alert("online");
  }, 0);  /*set time out function for alert messages end*/
 }/* online function end*/
 	
